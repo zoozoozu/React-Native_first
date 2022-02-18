@@ -6,7 +6,7 @@ import {
 
 import CheckLogin from '~/Screens/CheckLogin';
 import Login from '~/Screens/Login';
-//import MovieHome from '~/Screens/MovieHome';
+import Home from '~/Screens/Home';
 //import MovieDetail from '~/Screens/MovieDetail';
 
 const LoginNavigator = createStackNavigator({
@@ -14,21 +14,21 @@ const LoginNavigator = createStackNavigator({
 });
 
 //MainNavigator
-const MovieNavigator = createStackNavigator({
-    Login
-    //MovieHome,
+const HomeNavigator = createStackNavigator({
+    Home,
     //MovieDetail,
 });
 
 const AppNavigator = createSwitchNavigator(
     {
+        HomeNavigator,
         CheckLogin,
         LoginNavigator,
-        MovieNavigator,
+        
     },
 
     {
-        initialRouteName: 'CheckLogin',
+        initialRouteName: 'HomeNavigator',
     }
 );
 

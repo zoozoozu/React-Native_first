@@ -9,7 +9,7 @@ const App = ({}: Props) => {
   useEffect(() =>{
     SplashScreen.hide();
   },[]);
-  
+    
   return (
     <>
       <StatusBar barStyle = "light-content"/>

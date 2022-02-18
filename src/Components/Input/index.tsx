@@ -6,12 +6,14 @@ const Container = Styled.View`
   height: 40px;
   padding-left: 16px;
   padding-right: 16px;
-  border-radius: 4px;
-  background-color: #333333;
+  border-radius: 10px;
+  border: 1px;
+  background-color: #FFFFFF;
+  border-color: #dcdce2;
 `;
 const InputField = Styled.TextInput`
   flex: 1;
-  color: #FFFFFF;
+  color: #000000;
 `;
 
 interface Props {
@@ -34,13 +36,13 @@ const Input = ({
   return (
     <Container style={style}>
       <InputField
-        selectionColor="#FFFFFF"
+        selectionColor="#000000"
         secureTextEntry={secureTextEntry}
         keyboardType={keyboardType ? keyboardType : 'default'}
         autoCapitalize="none"
         autoCorrect={false}
         allowFontScaling={false}
-        placeholderTextColor="#FFFFFF"
+        placeholderTextColor="#000000"
         placeholder={placeholder}
         clearButtonMode={clearMode ? 'while-editing' : 'never'}
         onChangeText={onChangeText}

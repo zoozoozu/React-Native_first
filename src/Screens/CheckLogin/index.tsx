@@ -19,7 +19,7 @@ const CheckLogin = ({ navigation } : Props) => {
     AsyncStorage.getItem('key')
     .then(value => {
         if(value){
-            navigation.navigate('LoginNavigator');
+            navigation.navigate('HomeNavigator');
         }else{
             navigation.navigate('LoginNavigator');
         }
